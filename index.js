@@ -85,6 +85,7 @@ res.send({status: "success"});
   // go find the object with that id and delete from the array
 });
 
-server.listen(3000, () => {
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
   console.log("Server listening");
 });
